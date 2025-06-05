@@ -59,6 +59,7 @@
 // // This function takes a name and a callback function
 function greet(name, cb) {
   console.log("Hello, " + name + "!");
+  
   cb(); // Calls the callback function after greeting with is passed as parameter
 }
 // A callback function that says goodbye
