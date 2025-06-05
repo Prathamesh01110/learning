@@ -22,12 +22,12 @@
 // ctrl + ` opens vscode termianl
 
 
-function sq(x){
-    let ans = 0;
-    ans = x*x;
-    return ans;
-}
-console.log("the answer is: " + sq(12));
+// function sq(x){
+//     let ans = 0;
+//     ans = x*x;
+//     return ans;
+// }
+// console.log("the answer is: " + sq(12));
 
 
 
@@ -53,20 +53,20 @@ console.log("the answer is: " + sq(12));
 // console.log(greet("Prathamesh"));
 
 // Arrow Function
-// const greet = (name) => `Hello, ${name}!`;
+// const greet = (name) => {`Hello, ${name}!`};
 // console.log(greet("Prathamesh"));
 
 // // This function takes a name and a callback function
-// function greet(name, callback) {
-//   console.log("Hello, " + name + "!");
-//   callback(); // Calls the callback function after greeting
-// }
-// // A callback function that says goodbye
-// function sayGoodbye() {
-//   console.log("Goodbye!");
-// }
-// // Using greet with sayGoodbye as the callback
-// greet("Prathamesh", sayGoodbye);
+function greet(name, cb) {
+  console.log("Hello, " + name + "!");
+  cb(); // Calls the callback function after greeting with is passed as parameter
+}
+// A callback function that says goodbye
+function gdb() {
+  console.log("Goodbye!");
+}
+// Using greet with sayGoodbye as the callback
+greet("Prathamesh", gdb);
 
 
 
